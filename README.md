@@ -10,6 +10,7 @@ the [Hubs Browser](https://tutorials.autodesk.io/tutorials/hubs-browser/) tutori
 from https://tutorials.autodesk.io.
 
 ![thumbnail](thumbnail.jpg)
+https://user-images.githubusercontent.com/440241/222864341-4a8beefd-e861-4d77-bd6f-a8e09cf03293.mp4
 [![Watch the video](thumbnail.jpg)](https://user-images.githubusercontent.com/440241/222864341-4a8beefd-e861-4d77-bd6f-a8e09cf03293.mp4)
 
 ## Development
