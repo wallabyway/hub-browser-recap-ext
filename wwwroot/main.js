@@ -2,6 +2,7 @@ import { initViewer, loadModel, loadTiles } from './viewer.js';
 import { initTree } from './sidebar.js';
 
 const login = document.getElementById('login');
+const testQA = document.getElementById('testqa');
 try {
     const resp = await fetch('/api/auth/profile');
     if (resp.ok) {
@@ -18,6 +19,10 @@ try {
             };
         }
         const viewer = await initViewer(document.getElementById('preview'));
+		testQA.onclick = () => {
+			loadModel(viewer, "dXJuOmFkc2sud2lwcHJvZDpmcy5maWxlOnZmLklHTGFfSjVXUkJhb3RyZTl1eS0wM3c/dmVyc2lvbj0x");
+			loadTiles(viewer, "dXJuOmFkc2sud2lwcHJvZDpmcy5maWxlOnZmLl9QaVVaUXg3VFA2NmRlTkY1alNPR3c/dmVyc2lvbj0x");
+		}
         initTree('#tree', (id, ext) => {
 			const urn = window.btoa(id).replace(/=/g, '')
 			if (ext == "rcs") 

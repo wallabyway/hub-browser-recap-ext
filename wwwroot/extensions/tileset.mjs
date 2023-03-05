@@ -1,6 +1,6 @@
 //mapbox3DTiles.mjs
-//import { DRACOLoader } from "./draco/DRACOLoader.js";
-const dracoLoader = new THREE.DRACOLoader();
+import { DRACOLoader } from "./draco/DRACOLoader.js";
+const dracoLoader = new DRACOLoader();
 THREE.DRACOLoader.decoderPath = './extensions/draco/';
 
 
@@ -14,6 +14,7 @@ export class TileSet {
 		let updateCallback = () => {};
 		this.geometricError = json.root.geometricError * (styleParams.geomScale || 1.0);
 		this.root = new Tile(json.root, resourcePath, styleParams, updateCallback, null);
+		console.log(json.root);
 	}
 }
 

@@ -26,11 +26,14 @@ export function initViewer(container) {
     });
 }
 
-export function loadTiles(viewer, urn) {
+export async function loadTiles(viewer, urn) {
+	console.log(urn);
+	await viewer.loadExtension('ThreeTilesExtension');
 	viewer.getExtension('ThreeTilesExtension').addURN(urn, {showDebugBoxes:false, pointSize: 5, geomScale: 0.04});
 }
 
 export function loadModel(viewer, urn) {
+	console.log(urn);
     function onDocumentLoadSuccess(doc) {
         viewer.loadDocumentNode(doc, doc.getRoot().getDefaultGeometry());
     }

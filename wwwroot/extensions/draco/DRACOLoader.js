@@ -513,3 +513,5 @@ THREE.DRACOLoader._loadArrayBuffer = function ( src ) {
     loader.load( src, resolve, undefined, reject );
   });
 };
+
+export const DRACOLoader = THREE.DRACOLoader;
