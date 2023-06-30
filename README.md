@@ -1,5 +1,10 @@
 # Hubs Browser with Recap PointClouds (Node.js)
 
+
+See this Stackoverflow for usage details: https://stackoverflow.com/questions/73329077/how-to-get-autodesk-forge-viewer-to-support-rcp-files
+
+
+
 ![platforms](https://img.shields.io/badge/platform-windows%20%7C%20osx%20%7C%20linux-lightgray.svg)
 [![node.js](https://img.shields.io/badge/Node.js-16.16-blue.svg)](https://nodejs.org)
 [![npm](https://img.shields.io/badge/npm-8.11-blue.svg)](https://www.npmjs.com/)
